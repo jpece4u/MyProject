@@ -1,0 +1,18 @@
+<apex:page >
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Thank you for visit </h1>
+  <h2>Regards, 
+  Jay</h2>
+  
+ <br> </br>
+  
+  Adding Linnk<br></br>
+ <apex:outputLink value="http://jai-developer-edition.ap5.force.com/Web_To_Lead">
+
+<h3>Visit Web To Lead</h3>
+
+
+
+</apex:outputLink>
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

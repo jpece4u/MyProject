@@ -1,0 +1,11 @@
+<apex:page >
+  <!-- Begin Default Content REMOVE THIS -->
+  
+  <apex:image url="{!$Resource.Leadership}" />
+Javascript file <!--<apex:includeScript value="{!$Resource.MyJavascriptFile}" /> -->
+Image file in an Archive <!--<apex:image url="{!URLFOR($Resource.TestZip,'images/Bluehills.jpg')}" />-->
+CSS file in an Archive <!--<apex:stylesheet value="{!URLFOR($Resource.style_resources, 'styles.css')}"/> -->
+
+  
+  
+</apex:page>

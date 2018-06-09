@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>A case is get created with high priority</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Case Create Notification</name>
+    <style>none</style>
+    <subject>Case with high priority</subject>
+    <type>text</type>
+</EmailTemplate>

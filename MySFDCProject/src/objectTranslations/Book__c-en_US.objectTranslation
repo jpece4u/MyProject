@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Book</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Books</value>
+    </caseValues>
+    <fields>
+        <label><!-- Author --></label>
+        <name>Author__c</name>
+        <relationshipLabel><!-- Books --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Average Review Rating --></label>
+        <name>Average_Review_Rating__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. Of Review --></label>
+        <name>No_Of_Review__c</name>
+    </fields>
+    <fields>
+        <label><!-- Publisher --></label>
+        <name>Publisher__c</name>
+        <relationshipLabel><!-- Books --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Total Review Rating --></label>
+        <name>Total_Review_Rating__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

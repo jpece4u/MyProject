@@ -1,0 +1,12 @@
+<apex:page controller="VFController" >
+
+
+  <!-- Begin Default Content REMOVE THIS -->
+  
+  <apex:pageBlock >
+  My Name is:{!Method1} <br/>
+  10 + 10 is :{!Method2}
+  
+  </apex:pageBlock>
+  
+</apex:page>

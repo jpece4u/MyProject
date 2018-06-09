@@ -1,0 +1,34 @@
+<apex:page controller="VFController1" extensions="ExtController,ExtController2">
+<apex:pageBlock title="List of My Account">
+<apex:pageBlockTable title="Account List" value="{!AccList}" var="acc" >
+<apex:column value="{!acc.Id}"/>
+<apex:column value="{!acc.name}"/>
+ </apex:pageBlockTable>
+</apex:pageBlock>
+<apex:pageBlock title="My opportunity List">
+<apex:pageBlockTable title="opportunity List" value="{!OppList}" var="opp" >
+<apex:column value="{!opp.Id}"/>
+<apex:column value="{!opp.name}"/>
+ </apex:pageBlockTable>
+
+
+</apex:pageBlock>
+<apex:pageBlock title="Ext Controller Operation">
+
+<apex:pageBlockSection title="Accessing controller extension ExtController">
+
+{! ExtMethod1}
+
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="Accessing controller extension ExtController2">
+
+{! Ext2Method}
+
+</apex:pageBlockSection>
+  
+
+
+</apex:pageBlock>
+
+</apex:page>

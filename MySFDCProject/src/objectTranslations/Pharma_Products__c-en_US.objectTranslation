@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Pharma Product</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Pharma Products</value>
+    </caseValues>
+    <fields>
+        <label><!-- Business Type --></label>
+        <name>Business_Type__c</name>
+        <picklistValues>
+            <masterLabel>Cosmetic</masterLabel>
+            <translation><!-- Cosmetic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HealthCare</masterLabel>
+            <translation><!-- HealthCare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharmacy</masterLabel>
+            <translation><!-- Pharmacy --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+        <picklistValues>
+            <masterLabel>Large</masterLabel>
+            <translation><!-- Large --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small</masterLabel>
+            <translation><!-- Small --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Inventory --></label>
+        <name>Inventory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manufacturer --></label>
+        <name>Manufacturer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price --></label>
+        <name>Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Specification --></label>
+        <name>Specification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Category --></label>
+        <name>SubCategory__c</name>
+        <picklistValues>
+            <masterLabel>LargeA</masterLabel>
+            <translation><!-- LargeA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LargeB</masterLabel>
+            <translation><!-- LargeB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LargeC</masterLabel>
+            <translation><!-- LargeC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MediumA</masterLabel>
+            <translation><!-- MediumA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MediumB</masterLabel>
+            <translation><!-- MediumB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MediumC</masterLabel>
+            <translation><!-- MediumC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SmallA</masterLabel>
+            <translation><!-- SmallA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SmallB</masterLabel>
+            <translation><!-- SmallB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SmallC</masterLabel>
+            <translation><!-- SmallC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Sample quantity --></label>
+        <name>Total_Sample_quantity__c</name>
+    </fields>
+    <layouts>
+        <layout>Pharma Product Layout</layout>
+        <sections>
+            <label><!-- Category Information --></label>
+            <section>Category Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

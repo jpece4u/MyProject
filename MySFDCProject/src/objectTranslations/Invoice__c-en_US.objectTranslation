@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Invoice</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Invoices</value>
+    </caseValues>
+    <fields>
+        <label><!-- Bulk Invoice --></label>
+        <name>Bulk_Invoice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Final Amount --></label>
+        <name>Final_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hospital Email --></label>
+        <name>Hospital_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hospital --></label>
+        <name>Hospital__c</name>
+        <relationshipLabel><!-- Invoices --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Invoice Amount --></label>
+        <name>Invoice_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Date --></label>
+        <name>Invoice_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice No. --></label>
+        <name>Invoice_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Status --></label>
+        <name>Invoice_Status__c</name>
+        <picklistValues>
+            <masterLabel>Due</masterLabel>
+            <translation><!-- Due --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paid</masterLabel>
+            <translation><!-- Paid --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Invoice Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Price Details --></label>
+            <section>Price Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <workflowTasks>
+        <description><!-- Review The Invoice . --></description>
+        <name>Review_The_Invoice</name>
+        <subject><!-- Review The Invoice --></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

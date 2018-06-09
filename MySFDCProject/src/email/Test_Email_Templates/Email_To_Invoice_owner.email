@@ -1,0 +1,5 @@
+Invoice Details :
+Invoice#:  {!Invoice__c.Name}
+Invoice Amount:= {!Invoice__c.Invoice_Amount__c}
+Final Amount = {!Invoice__c.Final_Amount__c}
+Invoice Date: {!Invoice__c.Invoice_Date__c}

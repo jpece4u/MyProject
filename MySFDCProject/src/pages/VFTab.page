@@ -1,0 +1,23 @@
+<apex:page controller="ContactCustomController">
+<apex:pageBlock >
+  <apex:tabPanel >
+  <apex:tab label="Accounts" labelWidth="300" switchType="ajax">
+  <apex:pageBlockTable value="{!accs}" var="a">
+  <apex:column headerValue="Name" value="{!a.Name}"/>
+  
+  </apex:pageBlockTable>
+  
+  </apex:tab>
+  
+  <apex:tab label="Hospitals" labelWidth="300" switchType="ajax" >
+  <apex:pageBlockTable value="{!hosps}" var="a">
+  <apex:column headerValue="Name" value="{!a.Name}"/>
+  
+  </apex:pageBlockTable>
+  
+  </apex:tab>
+  
+  
+  </apex:tabPanel>
+  </apex:pageBlock>
+</apex:page>

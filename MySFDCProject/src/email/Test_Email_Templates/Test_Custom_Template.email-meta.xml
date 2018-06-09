@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Test Custom Template</name>
+    <style>none</style>
+    <subject>Greeting from Salesforce</subject>
+    <textOnly>Untitled Document
+
+Dear {!Contact.Name},
+
+
+
+Acoustic  Night
+Saturday 5 May, 8.30 pm
+
+Lorem ipsum ne mea postea minimum accusata, tritani voluptua reprimique per ne, id eam
+
+essent efficiendi instructior. Mea elit oportere dissentiunt ne, labore splendide ex eum. Vix porro repudiare evertitur in, natum utinam senserit et est. In per vitae malorum feugait, justo invidunt adolescens cu est, saepe phaedrum deterruisset sed ad. No vis justo perfecto interes- set, nam wisi postulant forensibus an, id vis quem mucius mediocrem.
+
+Company Name
+Enter company address here
+Phone: (000) 123  4567</textOnly>
+    <type>custom</type>
+</EmailTemplate>

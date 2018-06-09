@@ -1,0 +1,13 @@
+<apex:page standardController="Account">
+<apex:image width="500" url="{!$Resource.Leadership}"/>
+
+<apex:pageBlock title="Account Details">
+
+<apex:pageBlockSection title="Section 1" columns="3">
+<apex:outputField value="{! account.name}"/>
+<apex:outputField value="{! account.phone}"/>
+<apex:outputField value="{! account.industry}"/>
+
+</apex:pageBlockSection>
+</apex:pageBlock>
+</apex:page>

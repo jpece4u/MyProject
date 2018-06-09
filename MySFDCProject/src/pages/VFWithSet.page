@@ -1,0 +1,19 @@
+<apex:page controller="SetOperationController">
+<apex:form >
+  <apex:pageBlock title="Working With Set">
+  <apex:inputText value="{!keyword}"/>
+  <apex:commandButton value="Show Result" action="{!searchResult}"/>
+  <apex:commandButton value="show SOSL Result" action="{!findResult}"/>
+  
+  <apex:pageBlockTable value="{!accs}" var="a">
+  <apex:column headerValue="Name" value="{!a.Name}"/>
+   <apex:column headerValue="Type" value="{!a.type}"/>
+   <apex:column headerValue="Phone" value="{!a.phone}"/>
+   <apex:column headerValue="website" value="{!a.website}"/>
+  
+  
+  
+  </apex:pageBlockTable>
+  </apex:pageBlock>
+  </apex:form>
+</apex:page>

@@ -1,0 +1,9 @@
+{!Hospital__c.Name}
+
+Due bill is mentioned below:
+Invoice no.{!Invoice__c.Name}
+Invoice Date: {!Invoice__c.Invoice_Date__c}
+Created Date: {!Invoice__c.CreatedDate}
+Total Purchase = {!Invoice__c.Invoice_Amount__c}
+Amount to be Paid after discount!
+Final Due Amount = {!Invoice__c.Final_Amount__c}

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Case_Create_Notification</fullName>
+        <description>Case Create Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>jpece4u1@gmail.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Test_Email_Templates/Case_Create_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Case_Resolved_Notification</fullName>
+        <description>Case Resolved Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>jpece4u1@gmail.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Test_Email_Templates/Case_Resolved</template>
+    </alerts>
+    <alerts>
+        <fullName>Case_Resolved_Notification1</fullName>
+        <description>Case Resolved Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>jpece4u1@gmail.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Test_Email_Templates/Case_Resolved</template>
+    </alerts>
+    <alerts>
+        <fullName>Case_created_with_high_Priority</fullName>
+        <description>Case created with high Priority</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>jpece4u1@gmail.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Test_Email_Templates/Case_Create_Notification</template>
+    </alerts>
+    <rules>
+        <fullName>Case Closed</fullName>
+        <actions>
+            <name>Case_Resolved_Notification1</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Closed</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Casen with High Priority</fullName>
+        <actions>
+            <name>Case_created_with_high_Priority</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Priority</field>
+            <operation>equals</operation>
+            <value>High</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Follow Up when Platinum Contract Case Closes</fullName>
+        <actions>
+            <name>Case_Create_Notification</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Priority</field>
+            <operation>equals</operation>
+            <value>High</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.IsClosed</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Type</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <offsetFromField>Case.ClosedDate</offsetFromField>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+</Workflow>

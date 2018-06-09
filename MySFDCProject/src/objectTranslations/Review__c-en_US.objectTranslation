@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Review</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Reviews</value>
+    </caseValues>
+    <fields>
+        <label><!-- Average Rating --></label>
+        <name>Average_Rating__c</name>
+    </fields>
+    <fields>
+        <label><!-- Book --></label>
+        <name>Book__c</name>
+        <relationshipLabel><!-- Reviews --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Rating-Research --></label>
+        <name>Rating_Research__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rating-Story Telling --></label>
+        <name>Rating_Story_Telling__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rating-Writing Style --></label>
+        <name>Rating_Writing_Style__c</name>
+    </fields>
+    <fields>
+        <label><!-- Review --></label>
+        <name>Review__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Rating Research should be between 1 and 5 --></errorMessage>
+        <name>Rating_Research</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Rating should be between 1 and 5 --></errorMessage>
+        <name>Rating_Story_Telling</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Rating should be between 1 and 5 --></errorMessage>
+        <name>Rating_Writing_Style</name>
+    </validationRules>
+</CustomObjectTranslation>

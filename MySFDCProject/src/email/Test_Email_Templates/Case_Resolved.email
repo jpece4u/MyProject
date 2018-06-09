@@ -1,0 +1,8 @@
+Hi {!Contact.Name},
+
+Case :{!Case.Id} 
+
+is Resolved.
+
+Regards,
+{!Contact.OwnerFullName}
